@@ -14,6 +14,9 @@ module.exports = {
         title: ['HanziPen SC', 'sans-serif'],
         devil: ['ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'sans-serif'],
       },
+      colors: {
+        "gray": "#C0C0C0",
+      },
     },
   },
   plugins: [
@@ -22,5 +25,21 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
     require('daisyui'),
-  ]
+  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#BD0900",
+          "info": "#412E1D",
+          "secondary": "#3597DE",
+          "success": "#3597DE",
+          "accent": "#49b041",
+          "warning": "#325B2F",
+          "neutral": "#69031E",
+          "error": "#69031E",
+        },
+      },
+    ],
+  },
 }

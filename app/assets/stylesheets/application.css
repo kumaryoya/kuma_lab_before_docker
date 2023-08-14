@@ -41,6 +41,13 @@
   animation: fade-in 3s ease-in-out forwards;
 }
 
+.devil_fruit_image {
+  background-image: url("devil_fruit.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: animateBackground 3s linear infinite alternate;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -49,5 +56,14 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: center;
+  }
+  100% {
+    background-position: center bottom;
   }
 }

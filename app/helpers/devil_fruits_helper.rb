@@ -1,0 +1,2 @@
+module DevilFruitsHelper
+end

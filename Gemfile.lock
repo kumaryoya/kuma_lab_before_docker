@@ -87,6 +87,7 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    devil_fruit (0.2.0)
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -216,6 +217,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  devil_fruit (~> 0.2.0)
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)

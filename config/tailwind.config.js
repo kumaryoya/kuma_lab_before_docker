@@ -11,8 +11,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        title: ['HanziPen SC', 'sans-serif'],
-        devil: ['ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', 'sans-serif'],
+        title: ['Stick', "sans-serif"],
+        devil: ['Yuji Mai', "serif"],
       },
       colors: {
         "gray": "#C0C0C0",

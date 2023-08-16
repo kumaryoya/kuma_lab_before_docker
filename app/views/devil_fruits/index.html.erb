@@ -1,8 +1,8 @@
-<div class="devil_fruit_image flex justify-center items-center text-gray">
+<div class="devil_fruit_image flex justify-center items-center text-gray font-devil">
   <div class="text-center">
     <div class="md:grid justify-items-stretch">
       <% unless @devil_fruit %>
-        <div class="font-bold justify-self-center text-5xl pt-24 pb-10">Devil Fruit App</div>
+        <div class="font-bold justify-self-center text-4xl pt-24 pb-10">Devil Fruit App</div>
         <div style="text-align: center;" class="pb-10">
           <div class="flex justify-center items-center">
             <%= image_tag 'dokuro.png', class:"pb-5", size: '200x200' %>
@@ -24,7 +24,7 @@
         <div class="text-lg" style="display: flex; flex-direction: column; align-items: center;">
           <%= image_tag 'don.png', size: '400x200', class: "pt-24" %>
           <div class="pb-10"><%= "#{@name}は【#{@devil_fruit}】を食べた" %></div>
-          <div class="pb-10">大いなる力を手に入れた代わりに何かを失った気がした…</div>
+          <div class="pb-10">大いなる力を手に入れたと引き換えに何かを失った</div>
           <div class="pb-10"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/devil_fruits/&text=#{@name}は【#{@devil_fruit}】を食べた%0A&hashtags=DevilFruitApp", class: 'link link-secondary', target: '_blank' do %>
             Twitterで共有する
           <% end %></div>

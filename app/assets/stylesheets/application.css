@@ -17,6 +17,12 @@
   background-position: center;
 }
 
+.footer_image {
+  background-image: url("footer.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0);
   position: fixed;

@@ -31,13 +31,13 @@ module.exports = {
       {
         mytheme: {
           "primary": "#BD0900",
-          "info": "#412E1D",
+          "info": "#BD0900",
           "secondary": "#3597DE",
           "success": "#3597DE",
           "accent": "#49b041",
-          "warning": "#325B2F",
-          "neutral": "#69031E",
-          "error": "#69031E",
+          "warning": "#49b041",
+          "neutral": "#ffd400",
+          "error": "#ffd400",
         },
       },
     ],

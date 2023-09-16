@@ -18,38 +18,14 @@
 }
 
 .zoo_image {
-  background-image: url("zoo.jpg");
+  background-image: url("zoo_main.jpg");
   background-position: center;
 }
 
-.header_image {
-  background-image: url("header.jpeg");
-  background-size: cover;
-}
-
-.footer_image {
-  background-image: url("footer.jpeg");
+.star_image {
+  background-image: url("star.jpeg");
   background-size: cover;
   background-position: center;
-}
-
-.header {
-  background-color: rgba(0, 0, 0, 0);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.footer {
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(10px);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
 }
 
 .animate-fade-in {
@@ -57,10 +33,14 @@
 }
 
 .devil_fruit_image {
-  background-image: url("devil_fruit.jpg");
+  background-image: url("devil_fruit_main.jpg");
   background-size: cover;
   background-position: center;
   animation: animateBackground 3s linear infinite alternate;
+}
+
+.input::placeholder {
+  color: #E29956;
 }
 
 @keyframes fade-in {
@@ -81,8 +61,4 @@
   100% {
     background-position: center bottom;
   }
-}
-
-.input::placeholder {
-  color: #E29956;
 }

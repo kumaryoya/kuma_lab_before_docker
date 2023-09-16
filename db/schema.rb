@@ -10,5 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_16_013550) do
+  create_table "zoos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "location", null: false
+    t.string "area", null: false
+    t.string "prefecture", null: false
+    t.string "link", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["link"], name: "index_zoos_on_link", unique: true
+    t.index ["location"], name: "index_zoos_on_location", unique: true
+    t.index ["name"], name: "index_zoos_on_name", unique: true
+  end
+
 end

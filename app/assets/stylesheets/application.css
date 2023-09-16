@@ -22,6 +22,11 @@
   background-position: center;
 }
 
+.header_image {
+  background-image: url("header.jpeg");
+  background-size: cover;
+}
+
 .footer_image {
   background-image: url("footer.jpeg");
   background-size: cover;
@@ -76,4 +81,8 @@
   100% {
     background-position: center bottom;
   }
+}
+
+.input::placeholder {
+  color: #E29956;
 }

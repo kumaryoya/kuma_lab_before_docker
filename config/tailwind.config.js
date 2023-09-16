@@ -13,6 +13,7 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         title: ['Stick', "sans-serif"],
         devil: ['Yuji Mai', "serif"],
+        zoo: ['Kosugi Maru', "sans-serif"],
       },
       colors: {
         "gray": "#C0C0C0",

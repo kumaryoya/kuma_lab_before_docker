@@ -17,6 +17,11 @@
   background-position: center;
 }
 
+.zoo_image {
+  background-image: url("zoo.jpg");
+  background-position: center;
+}
+
 .footer_image {
   background-image: url("footer.jpeg");
   background-size: cover;

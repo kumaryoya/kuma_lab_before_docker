@@ -12,4 +12,5 @@ test:
   database: kuma_lab_test
 
 production:
+  <<: *default
   url: <%= ENV['JAWSDB_URL'] %>

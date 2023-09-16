@@ -1,13 +1,13 @@
-<div class="devil_fruit_image flex justify-center items-center text-gray font-devil">
+<div class="devil_fruit_image flex justify-center items-center text-gray font-devil py-20">
   <div class="text-center">
     <div class="md:grid justify-items-stretch">
       <% unless @devil_fruit %>
-        <div class="font-bold justify-self-center text-4xl pt-24 pb-10">Devil Fruit App</div>
+        <div class="font-bold justify-self-center text-4xl pb-10">Devil Fruit App</div>
         <div style="text-align: center;" class="pb-10">
           <div class="flex justify-center items-center">
-            <%= image_tag 'dokuro.png', class:"pb-5", size: '200x200' %>
+            <%= image_tag 'devil_fruit_dokuro.png', class:"pb-5", size: '200x200' %>
           </div>
-          <div class="text-lg pb-5">お前は悪魔の実を知っているか？<br>
+          <div class="text-lg pb-10">お前は悪魔の実を知っているか？<br>
                                     一口かじれば、不思議な能力が身に宿る果実のことだ。<br>
                                     だが、それと引き換えに大きなリスクをもたらすことになる。<br>
                                     さぁ、悪魔の実を喰らう覚悟のある者の名前を告げよ。</div>
@@ -17,22 +17,22 @@
             <%= form_tag result_devil_fruits_path, method: :get do %>
               <%= label_tag :name, '' %>
               <%= text_field_tag :name %><br>
-              <%= submit_tag '悪魔の実を食べる', class: "link link-accent text-lg pt-5 pb-24" %>
+              <%= submit_tag '悪魔の実を食べる', class: "link link-accent text-lg mt-10" %>
             <% end %>
       <% end %>
       <% if @devil_fruit %>
-        <div class="text-lg pb-36" style="display: flex; flex-direction: column; align-items: center;">
-          <%= image_tag 'don.png', size: '400x200', class: "pt-24" %>
+        <div class="text-lg" style="display: flex; flex-direction: column; align-items: center;">
+          <%= image_tag 'devil_fruit_don.png', size: '400x200'%>
           <div class="pb-10 text-2xl"><%= "#{@name}は【#{@devil_fruit}】を食べた" %></div>
-          <div class="pb-10 text-xl">大いなる力を手に入れたと引き換えに何かを失った</div>
+          <div class="pb-20 text-xl">大いなる力を手に入れたと引き換えに何かを失った</div>
           <div><%= link_to "https://dic.pixiv.net/a/#{@devil_fruit_first}", class: 'link link-primary', target: :_blank, rel: "noopener noreferrer" do %>
             <%= "【#{@devil_fruit}】とは？" %>
           <% end %></div>
-          <div class="pb-10 text-base">※外部のウェブサイトに移動します</div>
-          <div class="pb-10"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/devil_fruits/&text=#{@name}は【#{@devil_fruit}】を食べた%0A&hashtags=DevilFruitApp", class: 'link link-secondary', target: :_blank, rel: "noopener noreferrer" do %>
+          <div class="mb-10 text-base">※外部のウェブサイトに移動します</div>
+          <div class="mb-10"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/devil_fruits/&text=#{@name}は【#{@devil_fruit}】を食べた%0A&hashtags=DevilFruitApp", class: 'link link-secondary', target: :_blank, rel: "noopener noreferrer" do %>
             Twitterで共有する
           <% end %></div>
-          <%= link_to "もう一つ食べる", crush_devil_fruits_path, class: 'link link-neutral pb-10' %>
+          <%= link_to "もう一つ食べる", crush_devil_fruits_path, class: 'link link-neutral mb-10' %>
           <%= link_to "最初からやり直す", devil_fruits_path, class: 'link link-accent' %>
         </div>
       <% end %>

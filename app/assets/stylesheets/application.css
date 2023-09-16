@@ -12,19 +12,19 @@
  */
 
 .top_image {
-  background-image: url("top.jpg");
+  background-image: url("top_main.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.star_image {
+  background-image: url("top_star.jpeg");
   background-size: cover;
   background-position: center;
 }
 
 .zoo_image {
   background-image: url("zoo_main.jpg");
-  background-position: center;
-}
-
-.star_image {
-  background-image: url("star.jpeg");
-  background-size: cover;
   background-position: center;
 }
 

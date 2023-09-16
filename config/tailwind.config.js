@@ -31,14 +31,14 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#BD0900",
-          "info": "#BD0900",
+          "primary": "#E29956",
+          "info": "#E29956",
           "secondary": "#3597DE",
           "success": "#3597DE",
           "accent": "#49b041",
           "warning": "#49b041",
-          "neutral": "#ffd400",
-          "error": "#ffd400",
+          "neutral": "#BD0900",
+          "error": "#BD0900",
         },
       },
     ],

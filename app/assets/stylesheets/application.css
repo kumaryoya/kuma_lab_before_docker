@@ -82,3 +82,7 @@
     background-position: center bottom;
   }
 }
+
+.input::placeholder {
+  color: #E29956;
+}

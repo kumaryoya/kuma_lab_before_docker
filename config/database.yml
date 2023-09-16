@@ -12,9 +12,4 @@ test:
   database: kuma_lab_test
 
 production:
-  <<: *default
-  database: <%= ENV['MYSQL_DATABASE'] %>
-  url: <%= ENV['MYSQL_URL'] %>
-  username: <%= ENV['MYSQL_USERNAME'] %>
-  password: <%= ENV['MYSQL_PASSWORD'] %>
-  host: <%= ENV['MYSQL_HOST'] %>
+  url: <%= ENV['JAWSDB_URL'] %>

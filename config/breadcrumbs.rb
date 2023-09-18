@@ -38,6 +38,6 @@ crumb :zoo_recommend do
 end
 
 crumb :devil_fruit do
-  link "Devil_Fruit"
+  link "DevilFruitApp"
   parent :top
 end

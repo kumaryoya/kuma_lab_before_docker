@@ -14,6 +14,7 @@ gem "bootsnap", require: false
 gem 'devil_fruit', '~> 0.2.0'
 gem 'ransack'
 gem 'dotenv-rails'
+gem 'gretel'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

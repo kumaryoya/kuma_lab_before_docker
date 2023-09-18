@@ -26,7 +26,9 @@
   <body>
     <%= render 'shared/header' %>
     <%= render 'shared/flash_message' %>
-    <%= breadcrumbs separator: " &rsaquo; " %>
+    <div class="star_image text-white font-title text-lg pl-10">
+      <%= breadcrumbs separator: " &rsaquo; " %>
+    </div>
     <%= yield %>
     <%= render 'shared/footer' %>
   </body>

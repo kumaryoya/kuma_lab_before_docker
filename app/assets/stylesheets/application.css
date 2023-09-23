@@ -28,6 +28,16 @@
   background-position: center;
 }
 
+.dog_image {
+  background-image: url("dog_main.png");
+  background-position: center;
+}
+
+.post_image {
+  background-image: url("dog_post.jpg");
+  background-position: center;
+}
+
 .animate-fade-in {
   animation: fade-in 3s ease-in-out forwards;
 }

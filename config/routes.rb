@@ -15,4 +15,5 @@ Rails.application.routes.draw do
       get "top"
     end
   end
+  resources :dogs, only: %i[index]
 end

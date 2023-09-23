@@ -14,6 +14,7 @@ module.exports = {
         title: ['Stick', "sans-serif"],
         devil: ['Yuji Mai', "serif"],
         zoo: ['Kosugi Maru', "sans-serif"],
+        dog: ['Hachi Maru Pop', "cursive"],
       },
       colors: {
         "gray": "#C0C0C0",

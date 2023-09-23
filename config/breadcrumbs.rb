@@ -41,3 +41,8 @@ crumb :devil_fruit do
   link "DevilFruitApp"
   parent :top
 end
+
+crumb :dog do
+  link "わんわんルーレット"
+  parent :top
+end

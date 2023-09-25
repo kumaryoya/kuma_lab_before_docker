@@ -16,4 +16,5 @@ Rails.application.routes.draw do
     end
   end
   resources :dogs, only: %i[index]
+  resources :qiitas, only: %i[index]
 end

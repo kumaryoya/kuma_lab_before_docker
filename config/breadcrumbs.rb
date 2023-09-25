@@ -46,3 +46,8 @@ crumb :dog do
   link "わんわんルーレット"
   parent :top
 end
+
+crumb :qiita do
+  link "Railsちゃんねる"
+  parent :top
+end

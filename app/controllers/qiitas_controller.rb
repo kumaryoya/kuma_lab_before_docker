@@ -2,8 +2,8 @@ class QiitasController < ApplicationController
   require 'net/http'
 
   def index
-    yesterday = (Date.today - 2).strftime("%Y-%m-%d")
-    query = "created:>=#{yesterday} tag:Rails"
+    two_days_before = (Date.today - 2).strftime("%Y-%m-%d")
+    query = "created:>=#{two_days_before} tag:Rails"
     url = URI.parse("https://qiita.com/api/v2/items?query=#{URI.encode_www_form_component(query)}")
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true

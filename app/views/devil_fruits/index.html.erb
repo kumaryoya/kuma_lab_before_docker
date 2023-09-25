@@ -6,7 +6,7 @@
         <div class="font-bold justify-self-center text-4xl pb-10">DevilFruitApp</div>
         <div style="text-align: center;" class="pb-10">
           <div class="flex justify-center items-center">
-            <%= image_tag 'devil_fruit_dokuro.png', class:"pb-5", size: '200x200' %>
+            <%= image_tag 'devil_fruit_dokuro.webp', class:"pb-5", size: '200x200' %>
           </div>
           <div class="text-lg pb-10">お前は悪魔の実を知っているか？<br>
                                     一口かじれば、不思議な能力が身に宿る果実のことだ。<br>
@@ -23,7 +23,7 @@
       <% end %>
       <% if @devil_fruit %>
         <div class="text-lg" style="display: flex; flex-direction: column; align-items: center;">
-          <%= image_tag 'devil_fruit_don.png', size: '400x200'%>
+          <%= image_tag 'devil_fruit_don.webp', size: '400x200'%>
           <div class="pb-10 text-2xl"><%= "#{@name}は【#{@devil_fruit}】を食べた" %></div>
           <div class="pb-20 text-xl">大いなる力を手に入れたと引き換えに何かを失った</div>
           <div><%= link_to "https://dic.pixiv.net/a/#{@devil_fruit_first}", class: 'link link-primary', target: :_blank, rel: "noopener noreferrer" do %>

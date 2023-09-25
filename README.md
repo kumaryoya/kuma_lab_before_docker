@@ -1,5 +1,5 @@
 # くまらぼ  
-<img src="app/assets/images/logo.jpg" width="150x150">  
+<img src="app/assets/images/logo.webp" width="150x150">  
   
 ## サービスURL  
 https://www.kumalab.top/  

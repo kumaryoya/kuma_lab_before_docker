@@ -12,29 +12,29 @@
  */
 
 .top_image {
-  background-image: url("top_main.jpg");
+  background-image: url("top_main.webp");
   background-size: cover;
   background-position: center;
 }
 
 .star_image {
-  background-image: url("top_star.jpeg");
+  background-image: url("top_star.webp");
   background-size: cover;
   background-position: center;
 }
 
 .zoo_image {
-  background-image: url("zoo_main.jpg");
+  background-image: url("zoo_main.webp");
   background-position: center;
 }
 
 .dog_image {
-  background-image: url("dog_main.png");
+  background-image: url("dog_main.webp");
   background-position: center;
 }
 
 .post_image {
-  background-image: url("dog_post.jpg");
+  background-image: url("dog_post.webp");
   background-position: center;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .devil_fruit_image {
-  background-image: url("devil_fruit_main.jpg");
+  background-image: url("devil_fruit_main.webp");
   background-size: cover;
   background-position: center;
   animation: animateBackground 3s linear infinite alternate;

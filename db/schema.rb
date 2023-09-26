@@ -19,6 +19,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_16_013550) do
     t.string "link", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["link"], name: "index_zoos_on_link", unique: true
+    t.index ["location"], name: "index_zoos_on_location", unique: true
+    t.index ["name"], name: "index_zoos_on_name", unique: true
   end
 
 end

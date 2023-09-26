@@ -11,5 +11,8 @@ class CreateZoos < ActiveRecord::Migration[7.0]
       t.string :link, null: false
       t.timestamps
     end
+    add_index :zoos, :name, unique: true
+    add_index :zoos, :location, unique: true
+    add_index :zoos, :link, unique: true
   end
 end

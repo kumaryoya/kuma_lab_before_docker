@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Controller for managing top-level actions.
 class TopsController < ApplicationController
   def index; end
 

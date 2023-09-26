@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Controller for managing actions related to zoos.
 class ZoosController < ApplicationController
   def top; end
 

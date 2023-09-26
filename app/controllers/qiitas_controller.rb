@@ -10,7 +10,7 @@ class QiitasController < ApplicationController
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true
     request = Net::HTTP::Get.new(url)
-    request['Authorization'] = "Bearer #{ENV['QIITA_ACCESS_TOKEN']}"
+    request['Authorization'] = "Bearer #{ENV.fetch('QIITA_ACCESS_TOKEN')}"
     response = http.request(request)
     @articles = JSON.parse(response.body)
   end

@@ -15,6 +15,7 @@ gem 'puma', '~> 5.0'
 gem 'ransack'
 gem 'rubocop', require: false
 gem 'rubocop-capybara', require: false
+gem 'rubocop-discourse'
 gem 'rubocop-rails', require: false
 gem 'sprockets-rails'
 gem 'stimulus-rails'

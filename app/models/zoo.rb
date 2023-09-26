@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Zoo represents a model for managing information about zoos.
 class Zoo < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :location, presence: true, uniqueness: true

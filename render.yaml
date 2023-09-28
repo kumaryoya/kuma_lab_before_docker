@@ -1,14 +1,17 @@
 databases:
   - name: kuma_lab
-    databaseName: kuma_lab
+    databaseName: 「kuma_lab
     user: kuma_lab
+    region: singapore
 
 services:
   - type: web
     name: kuma_lab
     env: ruby
-    buildCommand: './bin/render-build.sh'
-    startCommand: 'bundle exec puma -C config/puma.rb'
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:

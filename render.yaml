@@ -1,12 +1,21 @@
 databases:
   - name: kuma_lab_db
     databaseName: kuma_lab_db
+    # ...
+  # 以下追加
+  - name: kuma_lab
+    databaseName: kuma_lab_db
     user: kuma_lab
     region: singapore
 
 services:
   - type: web
-    name: kuma_lab
+    name: kuma_lab_db
+    env: ruby
+    # ...
+  # 以下追加
+  - type: web
+    name: kuma_lab_db
     env: ruby
     region: singapore
     plan: free
@@ -19,3 +28,4 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+    autoDeploy: false

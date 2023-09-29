@@ -15,4 +15,6 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
+  database: kuma_lab
+  username: kuma_lab
   url: <%= ENV['DATABASE_URL'] %>

@@ -9,5 +9,5 @@ https://www.kumalab.top/
 * Rails 7.0.8  
 * Node.js 20.2.0  
 * CSS tailwind, daisyUI  
-* Webアプリケーションサーバ heroku  
+* Webアプリケーションサーバ render  
 * データベース PostgreSQL  

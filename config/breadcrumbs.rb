@@ -53,3 +53,8 @@ crumb :qiita do
   link 'Railsちゃんねる'
   parent :top
 end
+
+crumb :manga do
+  link '漫画ファインダー'
+  parent :top
+end

@@ -49,6 +49,12 @@
   animation: animateBackground 3s linear infinite alternate;
 }
 
+.manga_image {
+  background-image: url("manga_main.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .input::placeholder {
   color: #E29956;
 }

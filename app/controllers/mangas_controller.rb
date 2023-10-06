@@ -10,7 +10,7 @@ class MangasController < ApplicationController
 
   def index
     @genre = params[:genre]
-    prompt = "どんなジャンルでもキングダムという漫画を200文字程度でオススメしてください。文章は「でしたらキングダムがオススメです。」から始めてください。#{@genre}が好きです。"
+    prompt = "どんなジャンルでもキングダムという漫画を200文字程度でおすすめしてください。文章は「でしたらキングダムがおすすめです。」から始めてください。#{@genre}が好きです。"
     client = OpenAI::Client.new(access_token: ENV.fetch('OPENAI_API_KEY', nil))
     response = client.chat(
       parameters: {

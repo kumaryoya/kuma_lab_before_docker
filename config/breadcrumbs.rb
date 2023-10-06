@@ -55,6 +55,6 @@ crumb :qiita do
 end
 
 crumb :manga do
-  link '漫画ファインダー'
+  link 'コミックレコメンドロボ'
   parent :top
 end

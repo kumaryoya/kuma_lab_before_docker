@@ -6,7 +6,7 @@
   <div class="container mx-auto">
     <div class="flex flex-wrap justify-center">
       <% @genres.each do |genre| %>
-        <%= link_to genre, mangas_path(genre: genre), class: 'btn btn-primary text-white text-3xl m-10' %>
+        <%= link_to genre, mangas_path(genre: genre), class: 'btn btn-primary text-white lg:text-3xl text-base m-10' %>
       <% end %>
     </div>
   </div>

@@ -16,6 +16,7 @@ module.exports = {
         zoo: ['Kosugi Maru', "sans-serif"],
         dog: ['Hachi Maru Pop', "cursive"],
         qiita: ['Yuji Syuku', "serif"],
+        manga: ['Kaisei Opti', "serif"],
       },
       colors: {
         "gray": "#C0C0C0",

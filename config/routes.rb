@@ -19,4 +19,9 @@ Rails.application.routes.draw do
   end
   resources :dogs, only: %i[index]
   resources :qiitas, only: %i[index]
+  resources :mangas, only: %i[index] do
+    collection do
+      get 'genre'
+    end
+  end
 end

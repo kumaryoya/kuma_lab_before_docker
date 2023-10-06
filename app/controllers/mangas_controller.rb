@@ -5,7 +5,7 @@ class MangasController < ApplicationController
   require 'openai'
 
   def genre
-    @genres = %w[アクション SF スポーツ 恋愛 ギャンブル ヤンキー ホラー ミステリー 歴史 グルメ コメディー ビジネス 医療 友情 音楽 ファンタジー 青春 動物].shuffle
+    @genres = %w[アクション SF スポーツ 恋愛 ギャンブル ヤンキー ホラー ミステリー 歴史 グルメ コメディー ビジネス 医療 友情 日常 ファンタジー 青春 動物].shuffle
   end
 
   def index

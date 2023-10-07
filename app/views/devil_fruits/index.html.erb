@@ -30,7 +30,7 @@
             <%= "【#{@devil_fruit}】とは？" %>
           <% end %></div>
           <div class="mb-10 text-base">※リンク先は外部のウェブサイトです</div>
-          <div class="mb-10"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/devil_fruits/&text=#{@name}は【#{@devil_fruit}】を食べた%0A&hashtags=DevilFruitApp", class: 'link link-secondary', target: :_blank, rel: "noopener noreferrer" do %>
+          <div class="mb-10"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/&text=#{@name}は【#{@devil_fruit}】を食べた%0A&hashtags=DevilFruitApp", class: 'link link-secondary', target: :_blank, rel: "noopener noreferrer" do %>
             Twitterで共有する
           <% end %></div>
           <%= link_to "もう一つ食べる", crush_devil_fruits_path, class: 'link link-neutral mb-10' %>

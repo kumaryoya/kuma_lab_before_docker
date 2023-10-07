@@ -9,6 +9,10 @@
       gtag('js', new Date());
       gtag('config', 'G-8X8J2FG3DR');
     </script>
+    <%= display_meta_tags(default_meta_tags) %>
+    <%= favicon_link_tag('favicon.ico') %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
@@ -17,15 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
-    <%= favicon_link_tag('favicon.ico') %>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= display_meta_tags(default_meta_tags) %>
   </head>
   <body>
     <%= render 'shared/header' %>

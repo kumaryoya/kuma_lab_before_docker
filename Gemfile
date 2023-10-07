@@ -11,6 +11,7 @@ gem 'dotenv-rails'
 gem 'gretel'
 gem 'importmap-rails'
 gem 'jbuilder'
+gem 'meta-tags'
 gem 'puma', '~> 5.0'
 gem 'ransack'
 gem 'rubocop', require: false

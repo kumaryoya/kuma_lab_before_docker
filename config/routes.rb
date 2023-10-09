@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     end
   end
   resources :dogs, only: %i[index]
+  resources :cats, only: %i[index]
   resources :qiitas, only: %i[index]
   resources :mangas, only: %i[index] do
     collection do

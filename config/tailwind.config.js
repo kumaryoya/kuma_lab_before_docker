@@ -15,6 +15,7 @@ module.exports = {
         devil: ['Yuji Mai', "serif"],
         zoo: ['Kosugi Maru', "sans-serif"],
         dog: ['Hachi Maru Pop', "cursive"],
+        cat: ['Zen Maru Gothic', "sans-serif"],
         qiita: ['Yuji Syuku', "serif"],
         manga: ['Kaisei Opti', "serif"],
         shogun: ['Zen Antique', "serif"],

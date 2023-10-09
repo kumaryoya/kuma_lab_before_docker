@@ -1,0 +1,5 @@
+<%= form_with(url: image_faces_path, local: false, multipart: true) do |form| %>
+  <%= form.label 'image', '画像ファイルを選択' %>
+  <%= form.file_field 'image', accept: '.jpg, .jpeg, .png, .gif' %>
+  <%= form.submit '顔の検出' %>
+<% end %>

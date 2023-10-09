@@ -24,4 +24,9 @@ Rails.application.routes.draw do
       get 'genre'
     end
   end
+  resources :shoguns, only: %i[new show] do
+    collection do
+      post 'scoring'
+    end
+  end
 end

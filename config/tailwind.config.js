@@ -17,10 +17,12 @@ module.exports = {
         dog: ['Hachi Maru Pop', "cursive"],
         qiita: ['Yuji Syuku', "serif"],
         manga: ['Kaisei Opti', "serif"],
+        shogun: ['Zen Antique', "serif"],
       },
       colors: {
         "gray": "#C0C0C0",
         "qiita": "#F3F4F6",
+        "shogun": "#E4D197",
       },
     },
   },

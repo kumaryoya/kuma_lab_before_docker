@@ -58,3 +58,8 @@ crumb :manga do
   link 'コミックレコメンドロボ'
   parent :top
 end
+
+crumb :shogun do
+  link '天下の大将軍診断'
+  parent :top
+end

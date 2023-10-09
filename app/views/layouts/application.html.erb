@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
@@ -29,9 +30,13 @@
   </head>
   <body>
     <%= render 'shared/header' %>
-    <%= render 'shared/flash_message' %>
     <div class="star_image text-white font-title text-sm lg:text-xl pb-2 pl-10">
       <%= breadcrumbs separator: " &rsaquo; " %>
+    </div>
+    <div class="star_image text-white font-title text-xl items-center justify-center text-center">
+      <% flash.each do |message_type, message| %>
+      <div class="pb-5"><%= message %></div>
+      <% end %>
     </div>
     <%= yield %>
     <%= render 'shared/footer' %>

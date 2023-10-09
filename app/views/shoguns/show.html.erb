@@ -1,2 +1,10 @@
-<h1>顔の検出結果</h1>
-<h2>検出された顔の数: <%= @faces %></h2>
+<% breadcrumb :shogun %>
+<div class="bg-shogun text-neutral font-shogun items-center justify-center text-center py-28">
+  <div class="text-4xl pb-28">天下の大将軍診断</div>
+  <div class="text-2xl">あなたの天下の大将軍スコアは</div>
+  <div class="text-2xl pb-10"><%= @shogun.score %>点でした</div>
+  <div class="pb-28"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/&text=天下の大将軍スコアは#{@shogun.score}点だった！%0A&hashtags=天下の大将軍診断", class: 'link link-secondary text-2xl', target: :_blank, rel: "noopener noreferrer" do %>
+    Twitterで共有する
+  <% end %></div>
+  <div class="text-2xl">「<%= @quote %>」</div>
+</div>

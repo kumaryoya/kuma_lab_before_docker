@@ -33,8 +33,18 @@
   background-position: center;
 }
 
-.post_image {
+.dog_post_image {
   background-image: url("dog_post.webp");
+  background-position: center;
+}
+
+.cat_image {
+  background-image: url("cat_main.webp");
+  background-position: center;
+}
+
+.cat_post_image {
+  background-image: url("cat_post.webp");
   background-position: center;
 }
 

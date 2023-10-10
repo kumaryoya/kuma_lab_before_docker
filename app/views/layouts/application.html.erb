@@ -30,13 +30,26 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <%= render 'shared/header' %>
+    <header class="star_image">
+      <p class="text-3xl pl-5 py-5 font-title text-white"><%= link_to "くまらぼ", root_path %></p>
+    </header>
     <div class="star_image text-white font-title text-sm lg:text-xl pb-2 pl-10">
       <%= breadcrumbs separator: " &rsaquo; " %>
     </div>
-    <%= render 'shared/flash_message' %>
+    <div class="star_image text-white font-title text-xl items-center justify-center text-center">
+      <% flash.each do |message_type, message| %>
+        <div class="pb-5"><%= message %></div>
+      <% end %>
+    </div>
     <%= yield %>
-    <%= render 'shared/footer' %>
+    <footer class="star_image font-title relative py-20">
+      <div class="md:ml-auto flex flex-wrap justify-center text-white pb-20">
+        <%= link_to "プライバシーポリシー", privacy_policy_path, class: "link link-hover text-white text-base mx-2" %>
+        <%= link_to "利用規約", terms_of_service_path, class: "link link-hover text-white text-base mx-2" %>
+        <%= link_to "お問い合わせ", "https://forms.gle/aHoLgSmthYykwbZt6", target: :_blank, rel: "noopener noreferrer", class: "link link-hover text-white text-base mx-2" %>
+      </div>
+      <p class="text-center text-white text-xl">&copy; くまらぼ</p>
+    </footer>
   </body>
   <script>
     if ('serviceWorker' in navigator) {

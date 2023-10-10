@@ -34,11 +34,7 @@
     <div class="star_image text-white font-title text-sm lg:text-xl pb-2 pl-10">
       <%= breadcrumbs separator: " &rsaquo; " %>
     </div>
-    <div class="star_image text-white font-title text-xl items-center justify-center text-center">
-      <% flash.each do |message_type, message| %>
-        <div class="pb-5"><%= message %></div>
-      <% end %>
-    </div>
+    <%= render 'shared/flash_message' %>
     <%= yield %>
     <%= render 'shared/footer' %>
   </body>

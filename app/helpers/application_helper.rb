@@ -4,13 +4,17 @@
 module ApplicationHelper
   def default_meta_tags
     {
+      site: 'くまらぼ',
       title: 'くまらぼ',
       reverse: true,
       charset: 'utf-8',
       description: 'ミニアプリ集',
       keywords: 'くまらぼ,ミニアプリ',
-      canonical: request.original_url,
+      canonical: "https://www.kumalab.top/",
       separator: '|',
+      icon: [
+        { href: image_url('logo.webp') }
+      ],
       og: {
         site_name: :site,
         title: :title,
@@ -20,8 +24,9 @@ module ApplicationHelper
         image: image_url('logo.webp'),
         locale: 'ja-JP'
       },
+
       twitter: {
-        card: 'summary_large_image',
+        card: 'summary',
         site: '@kumaryoya',
         image: image_url('logo.webp')
       }

@@ -13,7 +13,7 @@ module ApplicationHelper
       canonical: "https://www.kumalab.top/",
       separator: '|',
       icon: [
-        { href: image_url('logo.webp') }
+        { href: image_url('logo_ogp.webp') }
       ],
       og: {
         site_name: :site,
@@ -21,14 +21,14 @@ module ApplicationHelper
         description: :description,
         type: 'website',
         url: request.original_url,
-        image: image_url('logo.webp'),
+        image: image_url('logo_ogp.webp'),
         locale: 'ja-JP'
       },
 
       twitter: {
         card: 'summary',
         site: '@kumaryoya',
-        image: image_url('logo.webp')
+        image: image_url('logo_ogp.webp')
       }
     }
   end

@@ -6,7 +6,8 @@
   <div class="text-xl lg:mx-20 mx-4 pb-10">
     <%= @recommendation %>
   </div>
-  <div><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/mangas/genre/&text=#{@genre}漫画としてキングダムをおすすめされた！%0A&hashtags=コミックレコメンドロボ", class: 'link link-secondary text-xl', target: :_blank, rel: "noopener noreferrer" do %>
+  <div class="mb-10"><%= link_to "https://twitter.com/share?url=https://www.kumalab.top/mangas/genre/&text=#{@genre}漫画としてキングダムをおすすめされた！%0A&hashtags=くまらぼ%0A&hashtags=コミックレコメンドロボ", class: 'link link-secondary text-xl', target: :_blank, rel: "noopener noreferrer" do %>
     Twitterで共有する
   <% end %></div>
+  <%= link_to "最初からやり直す", genre_mangas_path, class: 'link link-accent text-xl' %>
 </div>

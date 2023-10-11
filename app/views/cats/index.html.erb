@@ -1,12 +1,12 @@
 <% breadcrumb :cat %>
 <div class="cat_image items-center justify-center text-center">
-  <div class="font-cat text-accent lg:text-4xl text-3xl pt-32 pb-16">にゃんにゃんルーレット</div>
+  <div class="font-cat text-secondary lg:text-4xl text-3xl pt-32 pb-16">にゃんにゃんルーレット</div>
   <div class="mx-auto flex flex-wrap justify-center pb-5">
     <div class="card w-96 cat_post_image m-3">
       <figure class="p-4"><%= image_tag @cat_image_url%></figure>
     </div>
   </div>
-  <button class="btn btn-accent text-white font-cat mb-44" id="reloadButton" onclick="reloadPage()">再抽選</button>
+  <button class="btn btn-secondary text-white font-cat mb-44" id="reloadButton" onclick="reloadPage()">再抽選</button>
 </div>
 <script>
 function reloadPage() {

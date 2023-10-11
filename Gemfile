@@ -19,6 +19,7 @@ gem 'rubocop-capybara', require: false
 gem 'rubocop-discourse'
 gem 'rubocop-rails', require: false
 gem 'ruby-openai'
+gem 'sitemap_generator'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'tailwindcss-rails'

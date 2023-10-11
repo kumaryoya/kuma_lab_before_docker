@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_10_09_022549) do
   create_table "shoguns", force: :cascade do |t|
-    t.integer "score"
+    t.integer "score", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

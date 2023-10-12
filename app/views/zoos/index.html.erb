@@ -1,7 +1,7 @@
 <% breadcrumb :zoo_index %>
 <div class="flex flex-col justify-center text-center zoo_image text-primary font-zoo">
   <h1 class="text-4xl my-20">動物園一覧</h1>
-  <%= search_form_for @q do |f| %>
+  <%= search_form_for @q, html: { data: { turbo_frame: "zoo" } } do |f| %>
     <div class="flex items-center justify-center mb-10">
       <% selected_area = params[:q][:area_cont] if params[:q].present? %>
       <%= f.select :area_cont, options_for_select(["北海道地方", "東北地方", "関東地方", "中部地方", "関西地方", "中国地方", "四国地方", "九州地方"], selected: selected_area), { include_blank: "地方" }, class: 'input input-bordered input-primary mx-1', style: 'width: 125px;' %>
@@ -10,15 +10,17 @@
     </div>
   <% end %>
   <div class="mb-20">
-    <% @zoos_by_area.each do |area, zoos| %>
-      <div class="text-2xl text-accent mt-10 mb-2"><%= area %></div>
-      <ul>
-        <% zoos.each do |zoo| %>
-          <li class="text-base lg:text-xl link link-primary mb-1">
-            <%= link_to "#{zoo.name}(#{zoo.prefecture})", zoo_path(zoo) %>
-          </li>
-        <% end %>
-      </ul>
-    <% end %>
+    <turbo-frame id="zoo">
+      <% @zoos_by_area.each do |area, zoos| %>
+        <div class="text-2xl text-accent mt-10 mb-2"><%= area %></div>
+        <ul>
+          <% zoos.each do |zoo| %>
+            <li class="text-base lg:text-xl link link-primary mb-1">
+              <%= link_to "#{zoo.name}(#{zoo.prefecture})", zoo_path(zoo) %>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </turbo-frame>
   </div>
 </div>

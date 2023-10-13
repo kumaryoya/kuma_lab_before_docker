@@ -30,4 +30,5 @@ Rails.application.routes.draw do
       post 'scoring'
     end
   end
+  resources :movies, only: %i[index show]
 end

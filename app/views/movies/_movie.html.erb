@@ -1,0 +1,10 @@
+<div class="card w-96 shadow-xl post_image m-3">
+<p><%= image_tag 'https://image.tmdb.org/t/p/w200' + movie['poster_path'],class: "card-img" %></p>
+  <div class="card-body items-center justify-center text-center flex space-between">
+    <h2 class="text-xl pb-2 link link-primary">
+      <%= movie['title'] %><br>
+      <%= movie['release_date'] %><br>
+      <%= movie['overview'] %><br>
+    </h2>
+  </div>
+</div>

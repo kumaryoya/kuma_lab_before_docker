@@ -25,10 +25,10 @@ Rails.application.routes.draw do
       get 'genre'
     end
   end
-  resources :shoguns, only: %i[new show] do
+  resources :shoguns, only: %i[show new] do
     collection do
       post 'scoring'
     end
   end
-  resources :movies, only: %i[index show]
+  resources :movies, only: %i[index show new create]
 end

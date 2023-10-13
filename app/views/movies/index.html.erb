@@ -1,23 +1,13 @@
-<div class="search">
-    <%= form_tag(movies_path, method: :get) do %>
-        <%= search_field_tag :looking_for, nil, placeholder: 'Movie Title...' , :size => "40*40" %>
-        <%= submit_tag 'search' %>
-    <% end %>
-</div>
-<section class="main_image items-center justify-center text-center">
-  <div class="container mx-auto">
-    <div class="flex flex-wrap justify-center pb-20">
-      <div class="movies-container">
-        <% if @movies.present? %>
-          <% @movies.each do |movie| %>
-            <% if movie['title'].present? && movie['poster_path'].present? && movie['release_date'].present? && movie['overview'].present? %>
-              <ul>
-                <%= render partial: 'movie', locals: { movie: movie } %>
-              </ul>
-            <% end %>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
+<% breadcrumb :movie %>
+<div class="movie_image font-movie text-white items-center justify-center text-center py-20">
+  <div class="lg:mx-20 mx-4">
+    <div class="text-4xl pb-2">FilmBaton</div>
+    <div class="text-xl pb-10">〜おすすめの映画をバトンタッチ〜</div>
+    <div class="text-2xl pb-10">前の訪問者のおすすめの映画</div>
+    <%= image_tag "https://image.tmdb.org/t/p/w200#{@last_movie.poster_path}", class: "animation-rotateY mx-auto pb-10" %>
+    <div class="lg:text-3xl text-2xl pb-2">『<%= @last_movie.title %>』</div>
+    <div class="lg:text-2xl text-xl pb-2"><%= @last_movie.release_date %></div>
+    <div class="lg:text-xl text-lg pb-10"><%= @last_movie.overview %></div>
+    <div class="lg:text-2xl text-xl link link-primary"><%= link_to "次の訪問者へ映画をおすすめする", new_movie_path %></div>
   </div>
-</section>
+</div>

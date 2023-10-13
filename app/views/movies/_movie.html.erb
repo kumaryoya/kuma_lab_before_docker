@@ -1,10 +1,16 @@
-<div class="card w-96 shadow-xl post_image m-3">
-<p><%= image_tag 'https://image.tmdb.org/t/p/w200' + movie['poster_path'],class: "card-img" %></p>
+<div class="movie_post_image font-movie card w-96 m-3">
+  <figure class="pt-10"><%= image_tag 'https://image.tmdb.org/t/p/w200' + movie['poster_path'] %></figure>
   <div class="card-body items-center justify-center text-center flex space-between">
-    <h2 class="text-xl pb-2 link link-primary">
-      <%= movie['title'] %><br>
-      <%= movie['release_date'] %><br>
-      <%= movie['overview'] %><br>
-    </h2>
+    <div class="text-2xl"><%= movie['title'] %></div>
+    <div class="text-lg"><%= movie['release_date'] %></div>
+    <%= form_tag movies_path, method: :post, data: { turbo: false } do %>
+      <%= hidden_field_tag 'movie[title]', movie['title'] %>
+      <%= hidden_field_tag 'movie[release_date]', movie['release_date'] %>
+      <%= hidden_field_tag 'movie[overview]', movie['overview'] %>
+      <%= hidden_field_tag 'movie[poster_path]', movie['poster_path'] %>
+      <div class="text-2xl">
+        <%= submit_tag 'おすすめする', class: 'btn btn-primary' %>
+      </div>
+    <% end %>
   </div>
 </div>

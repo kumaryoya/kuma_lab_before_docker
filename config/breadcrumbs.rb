@@ -68,3 +68,8 @@ crumb :cat do
   link 'にゃんにゃんルーレット'
   parent :top
 end
+
+crumb :movie do
+  link 'FilmBaton'
+  parent :top
+end

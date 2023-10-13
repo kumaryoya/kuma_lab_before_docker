@@ -66,6 +66,18 @@
   background-position: center;
 }
 
+.movie_image {
+  background-image: url("movie_main.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.movie_post_image {
+  background-image: url("movie_post.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .input::placeholder {
   color: #E29956;
 }
@@ -157,6 +169,10 @@
   overscroll-behavior: contain;
 }
 
+.animation-rotateY {
+  animation: rotateY 3s;
+}
+
 @-webkit-keyframes sk-foldCubeAngle {
   0%, 10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
@@ -207,4 +223,9 @@
   100% {
     background-position: center bottom;
   }
+}
+
+@keyframes rotateY {
+  0% { transform: perspective(500px) rotateY(0deg); }
+  100% { transform: perspective(500px) rotateY(1080deg); }
 }

@@ -19,6 +19,7 @@ module.exports = {
         qiita: ['Yuji Syuku', "serif"],
         manga: ['Kaisei Opti', "serif"],
         shogun: ['Zen Antique', "serif"],
+        movie: ['BIZ UDPGothic', "sans-serif"],
       },
       colors: {
         "gray": "#C0C0C0",

@@ -16,7 +16,7 @@
         <ul>
           <% zoos.each do |zoo| %>
             <li class="text-base lg:text-xl link link-primary mb-1">
-              <%= link_to "#{zoo.name}(#{zoo.prefecture})", zoo_path(zoo) %>
+              <%= link_to "#{zoo.name}(#{zoo.prefecture})", zoo_path(zoo), data: { turbo: false } %>
             </li>
           <% end %>
         </ul>

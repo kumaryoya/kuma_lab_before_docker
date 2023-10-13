@@ -2,6 +2,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'app/controllers/shoguns_controller.rb'
+    - 'app/controllers/movies_controller.rb'
     - 'app/helpers/application_helper.rb'
     - 'bin/**/*'
     - 'config/routes.rb'

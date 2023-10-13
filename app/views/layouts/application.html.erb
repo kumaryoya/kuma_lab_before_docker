@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= favicon_link_tag('favicon.ico') %>
     <%= display_meta_tags(default_meta_tags) %>
@@ -43,9 +44,9 @@
     <%= yield %>
     <footer class="star_image font-title relative py-20">
       <div class="md:ml-auto flex flex-wrap justify-center text-white pb-20">
-        <%= link_to "プライバシーポリシー", privacy_policy_path, class: "link link-hover text-white text-base mx-2" %>
-        <%= link_to "利用規約", terms_of_service_path, class: "link link-hover text-white text-base mx-2" %>
-        <%= link_to "お問い合わせ", "https://forms.gle/aHoLgSmthYykwbZt6", target: :_blank, rel: "noopener noreferrer", class: "link link-hover text-white text-base mx-2" %>
+        <%= link_to "プライバシーポリシー", privacy_policy_path, class: "link text-white text-base mx-2" %>
+        <%= link_to "利用規約", terms_of_service_path, class: "link text-white text-base mx-2" %>
+        <%= link_to "お問い合わせ", "https://forms.gle/aHoLgSmthYykwbZt6", target: :_blank, rel: "noopener noreferrer", class: "link text-white text-base mx-2" %>
       </div>
       <p class="text-center text-white text-xl">&copy; くまらぼ</p>
     </footer>

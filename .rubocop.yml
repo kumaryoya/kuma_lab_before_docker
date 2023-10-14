@@ -11,5 +11,7 @@ AllCops:
     - 'vendor/**/*'
 
 require:
-  - rubocop-rails
   - rubocop-capybara
+  - rubocop-factory_bot
+  - rubocop-rails
+  - rubocop-rspec

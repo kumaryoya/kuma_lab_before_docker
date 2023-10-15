@@ -469,7 +469,7 @@
           1,
           1,
           null,
-          10,
+          37,
           null,
           null,
           null,
@@ -763,6 +763,81 @@
           null
         ]
       },
+      "/Users/ryoyaokuma/workspace/kuma_lab/spec/system/devil_fruits_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          7,
+          7,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/ryoyaokuma/workspace/kuma_lab/spec/system/dogs_spec.rb": {
         "lines": [
           null,
@@ -855,6 +930,30 @@
           null
         ]
       },
+      "/Users/ryoyaokuma/workspace/kuma_lab/app/controllers/devil_fruits_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          7,
+          7,
+          1,
+          null,
+          6,
+          6,
+          6,
+          null,
+          7,
+          null,
+          null
+        ]
+      },
       "/Users/ryoyaokuma/workspace/kuma_lab/app/controllers/dogs_controller.rb": {
         "lines": [
           null,
@@ -873,6 +972,6 @@
         ]
       }
     },
-    "timestamp": 1697328117
+    "timestamp": 1697331390
   }
 }

@@ -5,10 +5,10 @@
   <div class="text-2xl">そのジャンルの中からおすすめの漫画をロボが選んでくれます。</div>
   <div class="text-2xl">※時間がかかる場合があります。</div>
   <div class="text-2xl">おすすめされた漫画は必ず読んでください。</div>
-  <div class="container mx-auto" onclick="modal.showModal()">
+  <div class="container mx-auto">
     <div class="flex flex-wrap justify-center">
       <% @genres.each do |genre| %>
-        <%= link_to genre, mangas_path(genre: genre), class: 'btn btn-primary text-white lg:text-3xl text-base m-10' %>
+        <%= link_to genre, mangas_path(genre: genre), class: 'btn btn-primary text-white lg:text-3xl text-base m-10', onclick: "modal.showModal()" %>
       <% end %>
     </div>
   </div>

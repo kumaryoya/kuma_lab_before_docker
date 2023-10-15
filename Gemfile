@@ -19,6 +19,7 @@ gem 'rubocop-capybara', require: false
 gem 'rubocop-discourse'
 gem 'rubocop-rails', require: false
 gem 'ruby-openai'
+gem 'simplecov', require: false, group: :test
 gem 'sitemap_generator'
 gem 'sprockets-rails'
 gem 'stimulus-rails'

@@ -8,7 +8,7 @@ AllCops:
     - 'config/routes.rb'
     - 'db/migrate/**/*'
     - 'db/schema.rb'
-    - 'spec/system/devil_fruits_spec.rb'
+    - 'spec/system/*'
     - 'vendor/**/*'
 
 require:

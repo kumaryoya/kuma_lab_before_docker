@@ -9,7 +9,7 @@ describe 'devil_fruits' do
       click_link 'DevilFruitApp'
     end
 
-    it 'with devil_fruitsにアクセスすることができる' do
+    it 'with DevilFruitAppにアクセスすることができる' do
       expect(page).to have_content('お前は悪魔の実を知っているか？')
     end
 
@@ -23,6 +23,7 @@ describe 'devil_fruits' do
       fill_in 'name', with: 'テスト'
       click_button '悪魔の実を食べる'
       new_window = window_opened_by { click_link 'とは？' }
+      sleep(5)
       within_window new_window do
         expect(page).to have_content 'の実'
       end
@@ -32,6 +33,10 @@ describe 'devil_fruits' do
       fill_in 'name', with: 'テスト'
       click_button '悪魔の実を食べる'
       new_window = window_opened_by { click_link 'Twitterで共有する' }
+      sleep(5)
+      within_window new_window do
+        expect(page).to have_content 'Xにログイン'
+      end
     end
 
     it 'with もう一つ食べることができる' do
@@ -58,12 +63,9 @@ describe 'devil_fruits' do
   end
 
   context 'when 異常' do
-    before do
+    it 'with 名前を入力しないと悪魔の実を食べることができない' do
       visit '/'
       click_link 'DevilFruitApp'
-    end
-
-    it 'with 名前を入力しないと悪魔の実を食べることができない' do
       click_button '悪魔の実を食べる'
       expect(page).to have_content('名前を入力してください')
     end

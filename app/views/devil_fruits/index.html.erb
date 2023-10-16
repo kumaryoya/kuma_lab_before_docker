@@ -24,8 +24,8 @@
       <% if @devil_fruit %>
         <div class="text-lg" style="display: flex; flex-direction: column; align-items: center;">
           <%= image_tag 'devil_fruit_don.webp', size: '400x200'%>
-          <div class="pb-10 text-2xl"><%= "#{@name}は【#{@devil_fruit}】を食べた" %></div>
-          <div class="pb-20 text-xl">大いなる力を手に入れたと引き換えに何かを失った</div>
+          <div class="pb-20 text-2xl"><%= "#{@name}は【#{@devil_fruit}】を食べた" %></div>
+          <div class="pb-20 lg:text-xl text-base">大いなる力を手に入れたと引き換えに何かを失った</div>
           <div><%= link_to "https://dic.pixiv.net/a/#{@devil_fruit_first}", class: 'link link-primary', target: :_blank, rel: "noopener noreferrer" do %>
             <%= "【#{@devil_fruit}】とは？" %>
           <% end %></div>

@@ -11,29 +11,33 @@ describe 'mangas' do
 
     it 'with コミックレコメンドロボにアクセスすることができる' do
       expect(page).to have_content('読みたい漫画のジャンルを選択してください。')
+      expect(page).to have_current_path genre_mangas_path, ignore_query: true
     end
 
     it 'with ジャンルを選択することができる' do
       click_link 'アクション'
-      sleep(45)
+      sleep(40)
       expect(page).to have_content('キングダム')
+      expect(page).to have_current_path mangas_path, ignore_query: true
     end
 
     it 'with Twitterで共有することができる' do
       click_link 'アクション'
-      sleep(45)
+      sleep(40)
       new_window = window_opened_by { click_link 'Twitterで共有する' }
       sleep(5)
       within_window new_window do
         expect(page).to have_content 'Xにログイン'
       end
+      expect(page).to have_current_path mangas_path, ignore_query: true
     end
 
     it 'with 最初からやり直すことができる' do
       click_link 'アクション'
-      sleep(45)
+      sleep(40)
       click_link '最初からやり直す'
       expect(page).to have_content('読みたい漫画のジャンルを選択してください。')
+      expect(page).to have_current_path genre_mangas_path, ignore_query: true
     end
   end
 end

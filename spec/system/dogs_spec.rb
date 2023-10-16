@@ -8,6 +8,7 @@ describe 'dogs' do
       visit '/'
       click_link 'わんわんルーレット'
       expect(page).to have_content('わんわんルーレット')
+      expect(page).to have_current_path dogs_path, ignore_query: true
     end
   end
 end

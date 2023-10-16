@@ -8,7 +8,15 @@ AllCops:
     - 'config/routes.rb'
     - 'db/migrate/**/*'
     - 'db/schema.rb'
-    - 'spec/system/*'
+    - 'spec/system/cats_spec.rb'
+    - 'spec/system/devil_fruits_spec.rb'
+    - 'spec/system/dogs_spec.rb'
+    - 'spec/system/mangas_spec.rb'
+    - 'spec/system/movies_spec.rb'
+    - 'spec/system/qiitas_spec.rb'
+    - 'spec/system/shoguns_spec.rb'
+    - 'spec/system/tops_spec.rb'
+    - 'spec/system/zoos_spec.rb'
     - 'vendor/**/*'
 
 require:

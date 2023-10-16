@@ -11,12 +11,14 @@ describe 'devil_fruits' do
 
     it 'with DevilFruitAppにアクセスすることができる' do
       expect(page).to have_content('お前は悪魔の実を知っているか？')
+      expect(page).to have_current_path devil_fruits_path, ignore_query: true
     end
 
     it 'with 悪魔の実を食べることができる' do
       fill_in 'name', with: 'テスト'
       click_button '悪魔の実を食べる'
       expect(page).to have_content('テストは')
+      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true
     end
 
     it 'with 悪魔の実を調べることができる' do
@@ -27,6 +29,7 @@ describe 'devil_fruits' do
       within_window new_window do
         expect(page).to have_content 'の実'
       end
+      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true
     end
 
     it 'with Twitterで共有することができる' do
@@ -37,6 +40,7 @@ describe 'devil_fruits' do
       within_window new_window do
         expect(page).to have_content 'Xにログイン'
       end
+      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true
     end
 
     it 'with もう一つ食べることができる' do
@@ -44,6 +48,7 @@ describe 'devil_fruits' do
       click_button '悪魔の実を食べる'
       click_link 'もう一つ食べる'
       expect(page).to have_content('体が跡形もなく飛び散った')
+      expect(page).to have_current_path crush_devil_fruits_path, ignore_query: true
     end
 
     it 'with 最初からやり直すことができる1' do
@@ -51,6 +56,7 @@ describe 'devil_fruits' do
       click_button '悪魔の実を食べる'
       click_link '最初からやり直す'
       expect(page).to have_content('お前は悪魔の実を知っているか？')
+      expect(page).to have_current_path devil_fruits_path, ignore_query: true
     end
 
     it 'with 最初からやり直すことができる2' do
@@ -59,6 +65,7 @@ describe 'devil_fruits' do
       click_link 'もう一つ食べる'
       click_link '最初からやり直す'
       expect(page).to have_content('お前は悪魔の実を知っているか？')
+      expect(page).to have_current_path devil_fruits_path, ignore_query: true
     end
   end
 
@@ -68,6 +75,7 @@ describe 'devil_fruits' do
       click_link 'DevilFruitApp'
       click_button '悪魔の実を食べる'
       expect(page).to have_content('名前を入力してください')
+      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true
     end
   end
 end

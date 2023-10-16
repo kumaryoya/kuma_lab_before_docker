@@ -1,6 +1,11 @@
-<% breadcrumb :zoo_index %>
+<% breadcrumb :zoo %>
+<div class="zoo_image items-center text-center justify-center pb-20">
+  <div>
+    <%= image_tag "zoo_top.webp", alt: "ecommerce", class: "w-full" %>
+  </div>
+</div>
 <div class="flex flex-col justify-center text-center zoo_image text-primary font-zoo">
-  <h1 class="text-4xl my-20">動物園一覧</h1>
+  <h1 class="text-4xl mb-20">動物園一覧</h1>
   <%= search_form_for @q, html: { data: { turbo_frame: "zoo" } } do |f| %>
     <div class="flex items-center justify-center mb-10">
       <% selected_area = params[:q][:area_cont] if params[:q].present? %>

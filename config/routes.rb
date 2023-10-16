@@ -10,13 +10,7 @@ Rails.application.routes.draw do
       get 'result'
     end
   end
-  resources :zoos, only: %i[index show] do
-    collection do
-      get 'map'
-      get 'recommend'
-      get 'top'
-    end
-  end
+  resources :zoos, only: %i[index show]
   resources :dogs, only: %i[index]
   resources :cats, only: %i[index]
   resources :qiitas, only: %i[index]

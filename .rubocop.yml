@@ -13,6 +13,7 @@ AllCops:
     - 'spec/system/dogs_spec.rb'
     - 'spec/system/mangas_spec.rb'
     - 'spec/system/movies_spec.rb'
+    - 'spec/system/qiitas_spec.rb'
     - 'spec/system/tops_spec.rb'
     - 'vendor/**/*'
 

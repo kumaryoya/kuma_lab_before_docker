@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-16T10:32:46+09:00">2023-10-16T10:32:46+09:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-16T10:34:52+09:00">2023-10-16T10:34:52+09:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  99.41%
+  99.15%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.42
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>170</b> relevant lines,
-    <span class="green"><b>169</b> lines covered</span> and
+    <b>118</b> relevant lines,
+    <span class="green"><b>117</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  99.41%
+  99.15%
 </span>
 )
   </div>
@@ -82,13 +82,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#bcdabc3afc2d8564736846dece052876309604fd" class="src_link" title="app/controllers/devil_fruits_controller.rb">app/controllers/devil_fruits_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#713ed1e58257e373ab9d62dfff4e24d896620d48" class="src_link" title="app/controllers/dogs_controller.rb">app/controllers/dogs_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">11</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -110,7 +110,7 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">9.67</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -390,13 +390,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#0739ccad62356746a1a7fc52b661365a0dedc863" class="src_link" title="spec/system/devil_fruits_spec.rb">spec/system/devil_fruits_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#4be3d95d5be32089a8474d9ee09c306086ff21f9" class="src_link" title="spec/system/dogs_spec.rb">spec/system/dogs_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">81</td>
-            <td class="cell--number">56</td>
-            <td class="cell--number">56</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.25</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -492,9 +492,9 @@
 </div>
 
       
-        <div class="source_table" id="bcdabc3afc2d8564736846dece052876309604fd">
+        <div class="source_table" id="713ed1e58257e373ab9d62dfff4e24d896620d48">
   <div class="header">
-    <h3>app/controllers/devil_fruits_controller.rb</h3>
+    <h3>app/controllers/dogs_controller.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -506,8 +506,8 @@
     
 
     <div class="t-line-summary">
-      <b>11</b> relevant lines.
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -547,7 +547,7 @@
 
             
 
-            <code class="ruby"># Class responsible for managing devil fruits.</code>
+            <code class="ruby"># Controller for managing dog-related actions.</code>
           </li>
         </div>
       
@@ -558,7 +558,7 @@
 
             
 
-            <code class="ruby">class DevilFruitsController &lt; ApplicationController</code>
+            <code class="ruby">class DogsController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -569,7 +569,7 @@
 
             
 
-            <code class="ruby">  def index; end</code>
+            <code class="ruby">  require &#39;net/http&#39;</code>
           </li>
         </div>
       
@@ -591,18 +591,18 @@
 
             
 
-            <code class="ruby">  def crush; end</code>
+            <code class="ruby">  def index</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    uri = URI.parse(&#39;https://dog.ceo/api/breeds/image/random&#39;)</code>
           </li>
         </div>
       
@@ -613,111 +613,34 @@
 
             
 
-            <code class="ruby">  def result</code>
+            <code class="ruby">    response = Net::HTTP.get_response(uri)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="10">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">    @name = params[:name]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="7" data-linenumber="11">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">    if @name.blank?</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      @error_message = &#39;名前を入力してください&#39;</code>
+            <code class="ruby">    json_data = JSON.parse(response.body)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    else</code>
+            
+
+            <code class="ruby">    @dog_image_url = json_data[&#39;message&#39;]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="14">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      @devil_fruit = DevilFruitGem::FormatDevilFruit.random_devil_fruit</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="15">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      @devil_fruit_array = @devil_fruit.split</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="16">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      @devil_fruit_first = @devil_fruit_array[0]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="7" data-linenumber="18">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">    render &#39;index&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -728,7 +651,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -977,8 +900,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="27" data-linenumber="7">
-            <span class="hits">27</span>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
             
 
             
@@ -6475,9 +6398,9 @@
 </div>
 
       
-        <div class="source_table" id="0739ccad62356746a1a7fc52b661365a0dedc863">
+        <div class="source_table" id="4be3d95d5be32089a8474d9ee09c306086ff21f9">
   <div class="header">
-    <h3>spec/system/devil_fruits_spec.rb</h3>
+    <h3>spec/system/dogs_spec.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -6489,8 +6412,8 @@
     
 
     <div class="t-line-summary">
-      <b>56</b> relevant lines.
-      <span class="green"><b>56</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -6552,7 +6475,7 @@
 
             
 
-            <code class="ruby">describe &#39;devil_fruits&#39; do</code>
+            <code class="ruby">describe &#39;dogs&#39; do</code>
           </li>
         </div>
       
@@ -6574,738 +6497,12 @@
 
             
 
-            <code class="ruby">    before do</code>
+            <code class="ruby">    it &#39;with わんわんルーレットにアクセスすることができる&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="8">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">      visit &#39;/&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="7" data-linenumber="9">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">      click_link &#39;DevilFruitApp&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with DevilFruitAppにアクセスすることができる&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;お前は悪魔の実を知っているか？&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with 悪魔の実を食べることができる&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;name&#39;, with: &#39;テスト&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="20">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;テストは&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with 悪魔の実を調べることができる&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;name&#39;, with: &#39;テスト&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="27">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">      new_window = window_opened_by { click_link &#39;とは？&#39; }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      sleep(5)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      within_window new_window do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="30">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(page).to have_content &#39;の実&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with Twitterで共有することができる&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="36">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;name&#39;, with: &#39;テスト&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="37">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="38">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">      new_window = window_opened_by { click_link &#39;Twitterで共有する&#39; }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="39">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      sleep(5)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      within_window new_window do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(page).to have_content &#39;Xにログイン&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with もう一つ食べることができる&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;name&#39;, with: &#39;テスト&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="48">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_link &#39;もう一つ食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;体が跡形もなく飛び散った&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path crush_devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="52">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="53">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with 最初からやり直すことができる1&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;name&#39;, with: &#39;テスト&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_link &#39;最初からやり直す&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="58">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;お前は悪魔の実を知っているか？&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="59">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with 最初からやり直すことができる2&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;name&#39;, with: &#39;テスト&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="64">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="65">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_link &#39;もう一つ食べる&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_link &#39;最初からやり直す&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;お前は悪魔の実を知っているか？&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="68">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="69">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="70">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="71">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  context &#39;when 異常&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="73">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;with 名前を入力しないと悪魔の実を食べることができない&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="74">
+          <li class="covered" data-hits="1" data-linenumber="8">
             <span class="hits">1</span>
             
 
@@ -7316,51 +6513,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
+          <li class="covered" data-hits="1" data-linenumber="9">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      click_link &#39;DevilFruitApp&#39;</code>
+            <code class="ruby">      click_link &#39;わんわんルーレット&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="76">
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      click_button &#39;悪魔の実を食べる&#39;</code>
+            <code class="ruby">      expect(page).to have_content(&#39;わんわんルーレット&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="77">
+          <li class="covered" data-hits="1" data-linenumber="11">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      expect(page).to have_content(&#39;名前を入力してください&#39;)</code>
+            <code class="ruby">      expect(page).to have_current_path dogs_path, ignore_query: true</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="78">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_current_path result_devil_fruits_path, ignore_query: true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="79">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -7371,7 +6557,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="80">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -7382,7 +6568,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="81">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 

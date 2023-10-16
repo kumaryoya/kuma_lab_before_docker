@@ -16,6 +16,7 @@ AllCops:
     - 'spec/system/qiitas_spec.rb'
     - 'spec/system/shoguns_spec.rb'
     - 'spec/system/tops_spec.rb'
+    - 'spec/system/zoos_spec.rb'
     - 'vendor/**/*'
 
 require:

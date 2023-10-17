@@ -1,12 +1,14 @@
 <% breadcrumb :qiita %>
 <div class="bg-qiita font-qiita items-center justify-center text-center pt-20 pb-12">
-  <div class="text-accent text-4xl pb-4">Railsちゃんねる</div>
-  <div class="text-accent lg:text-2xl text-xl pb-4">一昨日から今日にかけて投稿された「Rails」タグが付いたQiita記事一覧</div>
-  <div class="text-accent text-xl pb-20">※リンク先は外部のウェブサイトです</div>
-  <div class="font-qiita">
-    <% @articles.each do |article| %>
-      <ul class="link text-lg"><%= link_to "・#{article['title']}", "#{article['url']}", target: :_blank, rel: "noopener noreferrer" %></ul>
-      <ul class="text-base mb-8">投稿日 <%= DateTime.parse(article['created_at']).strftime("%Y-%m-%d") %></ul>
-    <% end %>
+  <div class="mx-5">
+    <div class="text-accent text-4xl pb-4">Railsちゃんねる</div>
+    <div class="text-accent lg:text-2xl text-xl pb-4">一昨日から今日にかけて投稿された「Rails」タグが付いたQiita記事一覧</div>
+    <div class="text-accent text-xl pb-20">※リンク先は外部のウェブサイトです</div>
+    <div class="font-qiita">
+      <% @articles.each do |article| %>
+        <ul class="link text-lg"><%= link_to "・#{article['title']}", "#{article['url']}", target: :_blank, rel: "noopener noreferrer" %></ul>
+        <ul class="text-base mb-8">投稿日 <%= DateTime.parse(article['created_at']).strftime("%Y-%m-%d") %></ul>
+      <% end %>
+    </div>
   </div>
 </div>

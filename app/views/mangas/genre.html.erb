@@ -1,25 +1,27 @@
 <% breadcrumb :manga %>
 <div class="manga_image font-manga text-white bg-black items-center justify-center text-center pt-20 pb-10">
-  <div class="lg:text-4xl text-3xl pb-10">コミックレコメンドロボ</div>
-  <div class="lg:text-2xl text-lg">読みたい漫画のジャンルを選択してください。</div>
-  <div class="lg:text-2xl text-lg">そのジャンルの中からおすすめの漫画をロボが選んでくれます。</div>
-  <div class="lg:text-2xl text-lg">※時間がかかる場合があります。</div>
-  <div class="lg:text-2xl text-lg">おすすめされた漫画は必ず読んでください。</div>
-  <div class="container mx-auto">
-    <div class="flex flex-wrap justify-center">
-      <% @genres.each do |genre| %>
-        <%= link_to genre, mangas_path(genre: genre), class: 'btn btn-primary text-white lg:text-3xl text-base m-10', onclick: "modal.showModal()" %>
-      <% end %>
-    </div>
-  </div>
-  <dialog id="modal" class="modal">
-    <div class="modal-body bg-transparent">
-      <div class="sk-folding-cube">
-        <div class="sk-cube1 sk-cube"></div>
-        <div class="sk-cube2 sk-cube"></div>
-        <div class="sk-cube4 sk-cube"></div>
-        <div class="sk-cube3 sk-cube"></div>
+  <div class="mx-5">
+    <div class="lg:text-4xl text-3xl pb-10">コミックレコメンドロボ</div>
+    <div class="lg:text-2xl text-base">読みたい漫画のジャンルを選択してください。</div>
+    <div class="lg:text-2xl text-base">そのジャンルの中からおすすめの漫画をロボが選んでくれます。</div>
+    <div class="lg:text-2xl text-base">※時間がかかる場合があります。</div>
+    <div class="lg:text-2xl text-base">おすすめされた漫画は必ず読んでください。</div>
+    <div class="container mx-auto">
+      <div class="flex flex-wrap justify-center">
+        <% @genres.each do |genre| %>
+          <%= link_to genre, mangas_path(genre: genre), class: 'btn btn-primary text-white lg:text-3xl text-base lg:m-10 m-8', onclick: "modal.showModal()" %>
+        <% end %>
       </div>
     </div>
-  </dialog>
+    <dialog id="modal" class="modal">
+      <div class="modal-body bg-transparent">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
+    </dialog>
+  </div>
 </div>

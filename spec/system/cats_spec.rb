@@ -7,6 +7,7 @@ describe 'cats' do
     it 'with にゃんにゃんルーレットにアクセスすることができる' do
       visit '/'
       click_link 'にゃんにゃんルーレット'
+      sleep(1)
       expect(page).to have_content('にゃんにゃんルーレット')
       expect(page).to have_current_path cats_path, ignore_query: true
     end

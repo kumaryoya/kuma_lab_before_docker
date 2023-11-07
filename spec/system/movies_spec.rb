@@ -27,6 +27,7 @@ describe 'movies' do
       click_link '次の訪問者へ映画をおすすめする'
       fill_in 'looking_for', with: 'アイアンマン'
       click_button '検索'
+      sleep(1)
       expect(page).to have_content 'アイアンマン'
       expect(page).to have_current_path new_movie_path, ignore_query: true
     end
@@ -35,6 +36,7 @@ describe 'movies' do
       click_link '次の訪問者へ映画をおすすめする'
       fill_in 'looking_for', with: 'アイアンマン'
       click_button '検索'
+      sleep(1)
       first(:button, 'おすすめする').click
       expect(page).to have_content 'アイアンマン'
       expect(page).to have_current_path movies_path, ignore_query: true
@@ -48,6 +50,7 @@ describe 'movies' do
       click_link '次の訪問者へ映画をおすすめする'
       fill_in 'looking_for', with: ''
       click_button '検索'
+      sleep(1)
       expect(page).to have_content 'NoResult'
       expect(page).to have_current_path new_movie_path, ignore_query: true
     end

@@ -7,6 +7,7 @@ describe 'qiitas' do
     it 'with Railsちゃんねるにアクセスすることができる' do
       visit '/'
       click_link 'Railsちゃんねる'
+      sleep(1)
       expect(page).to have_content('一昨日から今日にかけて投稿された「Rails」タグが付いたQiita記事一覧')
       expect(page).to have_current_path qiitas_path, ignore_query: true
     end

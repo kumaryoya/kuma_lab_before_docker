@@ -14,7 +14,7 @@ class MangasController < ApplicationController
     client = OpenAI::Client.new(access_token: ENV.fetch('OPENAI_API_KEY', nil))
     response = client.chat(
       parameters: {
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4-1106-preview',
         messages: [{ role: 'user', content: prompt }]
       }
     )

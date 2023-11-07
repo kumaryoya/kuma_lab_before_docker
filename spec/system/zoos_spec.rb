@@ -19,23 +19,23 @@ describe 'zoos' do
     end
 
     it 'with 動物園一覧を見ることができる' do
-      expect(page).to have_content('zoo14.test_name')
+      expect(page).to have_link('zoo14.test_name')
       expect(page).to have_current_path zoos_path, ignore_query: true
     end
 
     it 'with 動物園を地方で検索することができる' do
       select '関東地方', from: 'q_area_cont'
       click_button '検索'
-      expect(page).to have_content 'zoo17.test_name'
-      expect(page).not_to have_content 'zoo19.test_name'
+      expect(page).to have_link 'zoo17.test_name'
+      expect(page).not_to have_link 'zoo19.test_name'
       expect(page).to have_current_path zoos_path, ignore_query: true
     end
 
     it 'with 動物園を動物園で検索することができる' do
       fill_in 'q_name_cont', with: '20'
       click_button '検索'
-      expect(page).to have_content 'zoo20.test_name'
-      expect(page).not_to have_content 'zoo21.test_name'
+      expect(page).to have_link 'zoo20.test_name'
+      expect(page).not_to have_link 'zoo21.test_name'
       expect(page).to have_current_path zoos_path, ignore_query: true
     end
 
@@ -43,8 +43,8 @@ describe 'zoos' do
       select '関東地方', from: 'q_area_cont'
       fill_in 'q_name_cont', with: '23'
       click_button '検索'
-      expect(page).to have_content 'zoo23.test_name'
-      expect(page).not_to have_content 'zoo24.test_name'
+      expect(page).to have_link 'zoo23.test_name'
+      expect(page).not_to have_link 'zoo24.test_name'
       expect(page).to have_current_path zoos_path, ignore_query: true
     end
 
